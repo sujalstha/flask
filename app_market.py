@@ -10,4 +10,4 @@ def hello_world():
 
 @app.route('/about/<username>')
 def about_page(username):
-    return f'<h1>About Page so [ {username} ] <h1>'
+    return f'<h1>About Page of [ {username} ] <h1>'
