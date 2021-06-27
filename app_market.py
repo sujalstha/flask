@@ -12,6 +12,9 @@ class Item(db.Model):
     barcode = db.Column(db.String(length=12), nullable=False, unqine=True)
     description = db.Column(db.String(length=1024), nullable=False, unqine=True)
 
+    def __repr__(self):
+        return f'Item {self.name}'
+
 
 @app.route('/')
 @app.route('/home')
