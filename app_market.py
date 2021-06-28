@@ -16,7 +16,6 @@ class Item(db.Model):
         return f'Item {self.name}'
 
 
-
 @app.route('/')
 @app.route('/home')
 def home_page():
